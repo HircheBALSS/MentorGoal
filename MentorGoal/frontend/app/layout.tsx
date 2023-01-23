@@ -1,5 +1,7 @@
 import './globals.css';
 
+import Footer from '@/components/footer';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -8,7 +10,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className="max-w-[1366px]">{children}</body>
+      <body className="max-w-[1366px]">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

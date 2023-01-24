@@ -1,19 +1,15 @@
-import Archive from '@/components/cards/Archive';
-import CardMobile from '@/components/cards/CardMobile';
 import CardPost from '@/components/cards/CardPost';
 import Cards from '@/components/cards/Cards';
-import SmallCard from '@/components/cards/SmallCard';
 import TitleContainer from '@/components/container/TitleContainer';
 import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/Navbar.tsx/Navbar';
+import Slider from '@/components/Slider';
 import BadgeAutreCategorie from '@/components/ui/badges/BadgeAutreCategorie';
 import BadgeCategorie from '@/components/ui/badges/BadgeCategorie';
 import BadgeCategorie2 from '@/components/ui/badges/BadgeCategorie2';
 import BadgeCv from '@/components/ui/badges/BadgeCv';
 import BadgeEntretien from '@/components/ui/badges/BadgeEntretien';
 import BadgeLm from '@/components/ui/badges/BadgeLm';
-import Link from 'next/link';
-import { Key, use } from 'react';
 
 // async function getArticles() {
 //   const res = await fetch(`http://localhost:1337/articles?`);
@@ -33,20 +29,10 @@ export default function Home() {
     <>
       <main className="h-screen">
         <Navbar />
-        <TitleContainer>
-          <div className="flex flex-col items-start p-0 gap-8 w-[379px] h-[136px] flex-none order-none flex-grow-0">
-            <h1>Le blog</h1>
-            <h2>
-              Lorem ipsum dolor sit amet consectetur. Libero laoreet at sed
-              cursus ut mi. Lorem ipsum dolor sit amet conse. Libero laoreet at
-              sed cursus ut mi.
-            </h2>
-          </div>
 
-          <div className="flex flex-col items-start p-0 gap-2 w-[379px] h-[72px] flex-none order-1 self-stretch flex-grow-0">
-            botContent
-          </div>
-        </TitleContainer>
+        <div className="top-[152px] flex left-[695] h-[412px]">
+          <Slider />
+        </div>
 
         {/* ALLPOSTHEADER */}
         <div className="lg:flex lg:flex-row lg:items-center lg:p-0 lg:gap-16 absolute lg:w-[1110px] lg:h-12 left-32 top-[716px]">
